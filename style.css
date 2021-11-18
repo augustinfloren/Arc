@@ -1,0 +1,344 @@
+html, body {
+ margin: 0;
+ padding: 0;
+ }
+/* @font-face {  */
+ font-family: "cairo", sans-serif;
+ src: url("/fonts/Cairo-Regular.ttf") format("truetype"),
+		url("/fonts/Cairo-Regular.otf") format("opentype")
+		url("/fonts/Cairo-Regular.woff2") format("woff2"),
+        url("/fonts/Cairo-Regular.woff") format("woff");
+}
+/* @font-face { */
+ font-family: "cairob";
+ src: url("fonts/Cairo-SemiBold.ttf") format("truetype"),
+		url("fonts/Cairo-SemiBold.woff2") format("woff2"),
+        url("fonts/Cairo-SemiBold.woff") format("woff");
+}
+body{
+	font-family: "cairo", sans-serif;
+}
+body{
+	height: 3000px;
+}
+main{
+	height: 1950px;
+}
+header{
+	display: table;
+	top: 0px;
+	width:100%;
+	height: 550px;
+	margin: auto;
+	background: linear-gradient(153deg, rgba(108,152,255,0.1) 10%, rgba(27,32,129,0) 47%);
+}
+nav{
+	font-family: "cairo";
+	font-weight: 600;
+}
+nav ul{
+	list-style-type: none;
+	margin-top: 50px;
+	margin-right: 50px;
+}
+nav li{
+	float: right;
+	text-align: center;
+}
+nav a{
+	display:block;
+	text-decoration: none;
+	font-size: 20px;
+	width: 130px;
+	color: #1E3870;
+	border: 2px solid #1E3870;
+}
+.logoscroll{
+	display: none;
+	margin-top: -50px;
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+}
+.logo2{
+	width: 150px;
+	padding-top: 18px;
+}
+.menu1{
+	margin-right: 26px;
+}
+nav a:hover{
+	color: white;
+	background-color: #1E3870;
+}
+.logocontainer{
+	width:100%;
+	text-align: center;
+	clear: both;
+}
+.logo{
+	margin-top: 50px;
+	width: 223px;
+}
+.titlecontainer{ 
+	text-align: center;
+	border-left: 2px solid #1E3870; 
+	width: 750px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	animation-duration: 2s;
+	animation-name: fadein;
+}
+@keyframes fadein {
+	from {
+	border-left-color: rgba(30, 56, 112, 0);
+  }
+  50% {
+	border-left-color: rgba(30, 56, 112, 0);
+  }
+  to {
+	border-left-color: rgba(30, 56, 112, 1);
+  }
+}
+
+h1{
+	font-family: "cairo";
+	font-size: 30px;
+	font-weight: 400;
+	color: #1E3870;
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+	margin-left: -1000px;
+	color: rgba(30, 56, 112, 0);
+  }
+  50% {
+	color: rgba(30, 56, 112, 0.1);
+  }
+  to {
+	margin-left: 0px;
+	color: rgba(30, 56, 112, 1);
+  }
+}
+
+.introbackground{
+	height: 630px;
+	background: rgba(0, 36, 89, 0.8);
+	background-blend-mode: multiply;
+	background-image: linear-gradient(-180deg, rgba(0, 36, 89, 0.3) 24%, rgba(1, 36, 87, 0.5) 100%), url("https://i.ibb.co/CKj8sn0/building.jpg");
+	/* background-size: 1500px; */
+	/* background-repeat: no-repeat; */
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.intro{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 44px;
+	padding-top: 100px;
+	width: 800px;
+}
+.titreintro{
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	color: white;
+	width: 500px;
+	line-height: 30px;
+}
+p{
+	font-family: cairo;
+	font-size: 15px;
+	font-weight: normal;
+	color: white;
+	line-height: 30px;
+}
+.liste1{
+	display: inline-block;
+	border-left: 2px solid #1F3973;
+	padding-left: 20px;
+}
+.liste2{
+	display: inline-block;
+	margin-left: 20px;
+	border-left: 2px solid #1F3973;
+	padding-left: 20px;
+}
+main{
+	background: linear-gradient(153deg, rgba(0,36,100,0.3) 0%, rgba(0,36,100, 0) 100%);
+}
+.experience{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px;
+	/* padding-left: 44px; */
+	/* padding-top: 100px; */
+	width: 800px;
+	height: 520px;
+	background: linear-gradient(180deg, rgba(0,17,46,1) 0%, rgba(0,36,100,0.8) 100%);
+	/* background: linear-gradient(153deg, rgba(242,253,255,1) 0%, rgba(242,253,255,0.3309524493391106) 100%); */
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 15px;
+}
+.experience h2{
+	color: white;
+	padding-top: 100px;
+	padding-left: 50px;
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	width: 500px;
+	line-height: 30px;
+}
+.experience p{
+	color: white; 
+}
+.exptxt{
+	border-left: 2px solid rgba(255, 255, 255, 0.3);
+	padding-left: 20px;
+	width: 680px;
+	height: 270px;
+	margin-top:30px;
+	padding-top: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.exptxt p{
+	line-height: 23px;
+}
+.expcoin{
+	display: inline;
+	position: absolute;
+	height : 0;
+	width : 0;
+	border-top : 150px solid rgba(255, 255, 255, 0.1);
+	border-right : 150px solid transparent;
+}
+.experience2{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px;
+	/* padding-left: 44px; */
+	/* padding-top: 100px; */
+	width: 800px;
+	height: 330px;
+	background: linear-gradient(180deg, rgba(0,17,46,1) 0%, rgba(0,36,100,0.8) 100%);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 15px;
+}
+.experience2 h2{
+	color: white;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-top: 100px;
+	padding-left: 50px;
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	width: 800px;
+	line-height: 30px;
+}
+.experience2 p{
+	color: white;
+}
+.exp2txt{
+	border-left: 2px solid rgba(255, 255, 255, 0.3);
+	padding-left: 20px;
+	width: 680px;
+	height: 100px;
+	margin-top:30px;
+	padding-top: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.exp2txt p{
+	line-height: 23px;
+}
+.exp2coin{
+	height : 0;
+	width : 0;
+	display: inline;
+	position: absolute;
+	border-top : 150px solid rgba(255, 255, 255, 0.1);
+	border-right : 150px solid transparent;
+}
+.fin{
+	text-align: center;
+}
+.txtfin{
+	color: #1E3870;
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	width: 750px;
+	line-height: 30px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 180px;
+}
+.footercontainer{
+	height: 450px;
+	margin-top: -20px;
+}
+#footer{
+	margin: auto;
+	padding-top: 40px;
+	width: 935px;
+}
+.portrait{
+	float: left;
+	margin-right: 50px;
+}
+.txtfootercont{
+	padding-top: 40px;
+}
+.nom{
+	font-family: "cairo";
+	font-weight: 800;
+}
+.txtfooter{
+	color: #1E3870;
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+}
+.bouton{
+	color: #1E3870;
+	background-color: #1E3870;
+	width: 200px;
+	margin-top: 50px;
+	margin-left: 500px;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.txtbouton{
+	font-family: "cairo";
+	font-weight: 400;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+.ifei{
+	display: block;
+	width: 70px;
+	margin: auto;
+	margin-top: 200px;
+}
+.copyrightcontainer{
+	margin-top: 100px;
+	background: #1E3870;
+	height: 60px;
+	text-align: center;
+}
+.copyright{
+	padding-top: 15px;
+}
