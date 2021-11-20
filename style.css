@@ -55,7 +55,6 @@ nav a{
 }
 .logoscroll{
 	display: none;
-	margin-top: -50px;
 	position: fixed;
 	height: 100px;
 	width: 100%;
@@ -79,13 +78,13 @@ nav a:hover{
 	clear: both;
 }
 .logo{
-	margin-top: 50px;
+	margin-top: 143px;
 	width: 223px;
 }
 .titlecontainer{ 
 	text-align: center;
 	border-left: 2px solid #1E3870; 
-	width: 750px;
+	width: 550px;
 	margin-top: 100px;
 	margin-left: auto;
 	margin-right: auto;
@@ -221,13 +220,14 @@ main{
 	border-right : 150px solid transparent;
 }
 .experience2{
+	margin-top: -10px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	/* margin-top: 10px; */
 	/* padding-left: 44px; */
 	/* padding-top: 100px; */
 	width: 800px;
-	height: 450px;
+	height: 430px;
 	background: linear-gradient(180deg, rgba(0,17,46,1) 0%, rgba(0,36,100,0.8) 100%);
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 15px;
@@ -271,7 +271,9 @@ main{
 .ifei{
 	display: block;
 	width: 70px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
 }
 .fin{
 	text-align: center;
@@ -315,25 +317,8 @@ main{
 	font-size: 25px;
 	line-height: 30px;
 }
-.bouton{
-	color: #1E3870;
-	background-color: #1E3870;
-	width: 200px;
-	margin-top: 50px;
-	margin-left: 500px;
-	text-align: center;
-	padding-top: 3px;
-	padding-bottom: 3px;
-}
-.txtbouton{
-	font-family: "cairo";
-	font-weight: 400;
-	color: white;
-	font-size: 20px;
-	text-decoration: none;
-}
 .copyrightcontainer{
-	margin-top: 100px;
+	margin-top: 200px;
 	background: #1E3870;
 	height: 60px;
 	text-align: center;
