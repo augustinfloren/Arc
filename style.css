@@ -227,7 +227,7 @@ main{
 	/* padding-left: 44px; */
 	/* padding-top: 100px; */
 	width: 800px;
-	height: 330px;
+	height: 530px;
 	background: linear-gradient(180deg, rgba(0,17,46,1) 0%, rgba(0,36,100,0.8) 100%);
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 15px;
@@ -272,7 +272,6 @@ main{
 	display: block;
 	width: 70px;
 	margin: auto;
-	margin-top: 200px;
 }
 .fin{
 	text-align: center;
