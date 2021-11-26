@@ -332,3 +332,7 @@ main{
    margin-top: 50px;
   }
 }
+@viewport {
+  width: device-width;
+}
+
