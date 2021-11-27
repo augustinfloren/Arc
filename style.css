@@ -438,10 +438,18 @@ main{
 	width: 100px;
 	padding-top: 10px;
   }
+  .liste2{ 
+		width: 400px;
+	}
 }
-@media only screen and (max-width: 573px){
+@media only screen and (max-width: 600px){
 	.intro{
 		padding-left: 70px;
+	}
+}
+@media only screen and (max-width: 573px){
+	.txtfooter{
+		width: 200px;
 	}
 }
 @viewport {
