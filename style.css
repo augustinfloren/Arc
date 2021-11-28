@@ -327,7 +327,7 @@ main{
 	padding-top: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
   /* For mobile phones: */
   body{
    height: 2900px;
@@ -363,17 +363,17 @@ main{
   }
   .intro{
 	  padding-top: 50px;
-	  padding-left: 130px;
-	  padding-right: 70px;
+	  padding-left: 0px;
+	  padding-right: 0px;
 	  height: 200px;
-	  width: 400px;
+	  width: 454px;
   }
   .introbackground{
 	  height: 800px;
   }
   .experience{
 	  margin-top: -10px;
-	  width: 500px;
+	  width: 454px;
 	  height: 600px;
   }
   .experience h2{
@@ -388,13 +388,19 @@ main{
   }
   .experience2{
 	  margin-top: -10px;
-	  width: 500px;
+	  width: 454px;
 	  height: 500px;
   }
   .experience2 h2{
 	  padding-top: 80px;
 	  font-size: 20px;
 	  width: 400px;
+  }
+  .sexp21{
+	display:none;
+  }
+   .sexp22{
+	display:none;
   }
   .exp2txt{
 	  font-size: 20px;
@@ -416,12 +422,13 @@ main{
 	  margin-right: 20px;
   }
   #footer{
-	  width: 560px;
+	  width: 454px;
 	  margin-top: 20px;
   }
   .txtfooter{
 	  margin-top: -30px;
 	  font-size: 18px;
+	  width: 430px;
   }
   .copyrightcontainer{
 	  margin-top: 130px;
@@ -444,12 +451,7 @@ main{
 }
 @media only screen and (max-width: 600px){
 	.intro{
-		padding-left: 70px;
-	}
-}
-@media only screen and (max-width: 573px){
-	.txtfooter{
-		width: 200px;
+		/* padding-left: 70px; */
 	}
 }
 @viewport {
