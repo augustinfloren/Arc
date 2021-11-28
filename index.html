@@ -16,7 +16,9 @@
  
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
 	<script type="text/javascript">
-	if(window.innerWidth > 950){
+	window.addEventListener('resize', function(){
+    if(window.innerWidth > 568){
+	
 	$(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 200) {
@@ -66,8 +68,9 @@
     }
 
 	});
-	}
 	
+	}
+});
 	</script>
 
 	<body>
