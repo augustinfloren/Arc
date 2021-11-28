@@ -1,164 +1,460 @@
-<!DOCTYPE html>
-<html>
+html, body {
+ margin: 0;
+ padding: 0;
+ }
+/* @font-face {  */
+ font-family: "cairo", sans-serif;
+ src: url("/fonts/Cairo-Regular.ttf") format("truetype"),
+		url("/fonts/Cairo-Regular.otf") format("opentype")
+		url("/fonts/Cairo-Regular.woff2") format("woff2"),
+        url("/fonts/Cairo-Regular.woff") format("woff");
+}
+/* @font-face { */
+ font-family: "cairob";
+ src: url("fonts/Cairo-SemiBold.ttf") format("truetype"),
+		url("fonts/Cairo-SemiBold.woff2") format("woff2"),
+        url("fonts/Cairo-SemiBold.woff") format("woff");
+}
+body{
+	font-family: "cairo", sans-serif;
+}
+body{
+	height: 3000px;
+}
+main{
+	height: 1950px;
+}
+header{
+	display: table;
+	top: 0px;
+	width:100%;
+	height: 550px;
+	margin: auto;
+	background: linear-gradient(153deg, rgba(108,152,255,0.1) 10%, rgba(27,32,129,0) 47%);
+}
+nav{
+	font-family: "cairo";
+	font-weight: 600;
+}
+nav ul{
+	list-style-type: none;
+	margin-top: 50px;
+	margin-right: 50px;
+}
+nav li{
+	float: right;
+	text-align: center;
+}
+nav a{
+	display:block;
+	text-decoration: none;
+	font-size: 20px;
+	width: 130px;
+	color: #1E3870;
+	border: 2px solid #1E3870;
+}
+.logoscroll{
+	display: none;
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+}
+.logo2{
+	width: 150px;
+	padding-top: 18px;
+}
+.menu1{
+	margin-right: 26px;
+}
+nav a:hover{
+	color: white;
+	background-color: #1E3870;
+}
+.logocontainer{
+	width:100%;
+	text-align: center;
+	clear: both;
+}
+.logo{
+	margin-top: 143px;
+	width: 223px;
+}
+.titlecontainer{ 
+	text-align: center;
+	border-left: 2px solid #1E3870; 
+	width: 550px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	animation-duration: 2s;
+	animation-name: fadein;
+}
+@keyframes fadein {
+	from {
+	border-left-color: rgba(30, 56, 112, 0);
+  }
+  50% {
+	border-left-color: rgba(30, 56, 112, 0);
+  }
+  to {
+	border-left-color: rgba(30, 56, 112, 1);
+  }
+}
 
- <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-   <link rel="shortcut icon" type="image/ico" href="img/favicon.gif" />
-   <link rel="stylesheet" type="text/css" href="style.css" />
-   <link rel="stylesheet" type="text/css" href="style.css" />
-   <title> Arc expertise </title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet"> 
-	<meta name="viewport" content="width=device-width, initial-scale=0.7">
+h1{
+	font-family: "cairo";
+	font-size: 30px;
+	font-weight: 400;
+	color: #1E3870;
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+	margin-left: -1000px;
+	color: rgba(30, 56, 112, 0);
+  }
+  50% {
+	color: rgba(30, 56, 112, 0.1);
+  }
+  to {
+	margin-left: 0px;
+	color: rgba(30, 56, 112, 1);
+  }
+}
 
- </head>
- 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
-	<script type="text/javascript">
-	
-	$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 200) {
-        $('.logoscroll').fadeIn("100");
-    } else {
-        $('.logoscroll').fadeOut("100");
-    }
+.introbackground{
+	height: 630px;
+	background: rgba(0, 36, 89, 0.8);
+	background-blend-mode: multiply;
+	background-image: linear-gradient(-180deg, rgba(0, 36, 89, 0.3) 24%, rgba(1, 36, 87, 0.5) 100%), url("https://i.ibb.co/CKj8sn0/building.jpg");
+	/* background-size: 1500px; */
+	/* background-repeat: no-repeat; */
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.intro{
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 44px;
+	padding-top: 100px;
+	width: 800px;
+}
+.titreintro{
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	color: white;
+	width: 500px;
+	line-height: 30px;
+}
+p{
+	font-family: cairo;
+	font-size: 15px;
+	font-weight: normal;
+	color: white;
+	line-height: 30px;
+}
+.liste1{
+	display: inline-block;
+	border-left: 2px solid #1F3973;
+	padding-left: 20px;
+}
+.liste2{
+	display: inline-block;
+	margin-left: 20px;
+	border-left: 2px solid #1F3973;
+	padding-left: 20px;
+}
+main{
+	background: linear-gradient(153deg, rgba(0,36,100,0.3) 0%, rgba(0,36,100, 0) 100%);
+}
+.experience{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px;
+	/* padding-left: 44px; */
+	/* padding-top: 100px; */
+	width: 800px;
+	height: 520px;
+	background: linear-gradient(180deg, rgba(0,17,46,1) 0%, rgba(0,36,100,0.8) 100%);
+	/* background: linear-gradient(153deg, rgba(242,253,255,1) 0%, rgba(242,253,255,0.3309524493391106) 100%); */
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.experience h2{
+	color: white;
+	padding-top: 100px;
+	padding-left: 50px;
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	width: 500px;
+	line-height: 30px;
+}
+.experience p{
+	color: white; 
+}
+.exptxt{
+	border-left: 2px solid rgba(255, 255, 255, 0.3);
+	padding-left: 20px;
+	width: 680px;
+	height: 270px;
+	margin-top:30px;
+	padding-top: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.exptxt p{
+	line-height: 23px;
+}
+.expcoin{
+	display: inline;
+	position: absolute;
+	height : 0;
+	width : 0;
+	border-top : 150px solid rgba(255, 255, 255, 0.1);
+	border-right : 150px solid transparent;
+}
+.experience2{
+	margin-top: -10px;
+	margin-left: auto;
+	margin-right: auto;
+	/* margin-top: 10px; */
+	/* padding-left: 44px; */
+	/* padding-top: 100px; */
+	width: 800px;
+	height: 430px;
+	background: linear-gradient(180deg, rgba(0,17,46,1) 0%, rgba(0,36,100,0.8) 100%);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+.experience2 h2{
+	color: white;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-top: 100px;
+	padding-left: 50px;
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	width: 800px;
+	line-height: 30px;
+}
+.experience2 p{
+	color: white;
+}
+.exp2txt{
+	border-left: 2px solid rgba(255, 255, 255, 0.3);
+	padding-left: 20px;
+	width: 680px;
+	height: 100px;
+	margin-top:30px;
+	padding-top: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.exp2txt p{
+	line-height: 23px;
+}
+.exp2coin{
+	height : 0;
+	width : 0;
+	display: inline;
+	position: absolute;
+	border-top : 150px solid rgba(255, 255, 255, 0.1);
+	border-right : 150px solid transparent;
+}
+.ifei{
+	display: block;
+	width: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+.fin{
+	text-align: center;
+}
+.txtfin{
+	color: #1E3870;
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	width: 750px;
+	line-height: 30px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 180px;
+}
+.footercontainer{
+	height: 450px;
+	margin-top: -20px;
+}
+#footer{
+	margin: auto;
+	padding-top: 40px;
+	width: 935px;
+}
+.portrait{
+	float: left;
+	margin-right: 50px;
+}
+.txtfootercont{
+	padding-top: 40px;
+}
+.nom{
+	font-family: "cairo";
+	font-weight: 800;
+}
+.txtfooter{
+	color: #1E3870;
+	font-family: "cairo";
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 30px;
+}
+.copyrightcontainer{
+	margin-top: 200px;
+	background: #1E3870;
+	height: 60px;
+	text-align: center;
+}
+.copyright{
+	padding-top: 15px;
+}
 
-	});
-	
-	$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 500) {
-        $('.experience').fadeIn("3000");
-    } else {
-        $('.experience').fadeOut("3000");
-    }
+@media only screen and (max-width: 950px) {
+  /* For mobile phones: */
+  body{
+   height: 2900px;
+  }
+  .sf{ 
+	  display: none;
+  }
+ .logo{
+   margin-top: 50px;
+   width: 150px;
+  }
+  .titlecontainer{
+	 width: 360px;
+	 margin-top: 50px;
+  }
+ .titlecontainer h1{
+	 font-size: 20px;
+  }
+  header{
+	  height: 280px;
+  }
+  .liste1{
+	  margin-top: 20px;
+  }
+  .liste2{
+	  display: block;
+	  margin-left: 0px;
+	  margin-top: 40px;
+  }
+  .titreintro{
+	  font-size: 20px;
+	  width: 400px;
+  }
+  .intro{
+	  padding-top: 50px;
+	  padding-left: 0px;
+	  padding-right: 0px;
+	  height: 200px;
+	  width: 454px;
+  }
+  .introbackground{
+	  height: 800px;
+  }
+  .experience{
+	  margin-top: -10px;
+	  width: 454px;
+	  height: 600px;
+  }
+  .experience h2{
+	  padding-top: 80px;
+	  font-size: 20px;
+	  width: 400px;
+  }
+  .exptxt{
+	  font-size: 20px;
+	  width: 400px;
+	  height: 380px;
+  }
+  .experience2{
+	  margin-top: -10px;
+	  width: 454px;
+	  height: 500px;
+  }
+  .experience2 h2{
+	  padding-top: 80px;
+	  font-size: 20px;
+	  width: 400px;
+  }
+  .sexp21{
+	display:none;
+  }
+   .sexp22{
+	display:none;
+  }
+  .exp2txt{
+	  font-size: 20px;
+	  width: 400px;
+	  height: 150px;
+  }
+  .txtfin{
+	  font-size: 20px;
+	  width: 400px;
+	  margin-top: 70px;
+  }
+  main{
+	  height: 2270px;
+  }
+  .portrait{
+	  width: 200px;
+	  /* float: none; */
+	  margin-left: 0px;
+	  margin-right: 20px;
+  }
+  #footer{
+	  width: 454px;
+	  margin-top: 20px;
+  }
+  .txtfooter{
+	  margin-top: -30px;
+	  font-size: 18px;
+	  width: 430px;
+  }
+  .copyrightcontainer{
+	  margin-top: 130px;
+  }
+  .logoscroll{
+	display: none;
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+  }
+  .logo2{
+	width: 100px;
+	padding-top: 10px;
+  }
+  .liste2{ 
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 600px){
+	.intro{
+		/* padding-left: 70px; */
+	}
+}
+@viewport {
+  width: device-width;
+}
 
-	});
-	
-	$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 900) {
-        $('.experience2').fadeIn("3000");
-    } else {
-        $('.experience2').fadeOut("3000");
-    }
-
-	});
-	
-	$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 1400) {
-        $('.fin').fadeIn("3000");
-    } else {
-        $('.fin').fadeOut("3000");
-    }
-
-	});
-	
-	$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 2000) {
-        $('footer').fadeIn("2000");
-    } else {
-        $('footer').fadeOut("2000");
-    }
-
-	});
-	
-	</script>
-
-	<body>
-	
-		<header>
-			<div class="logoscroll">
-				<img class="logo2" src="https://i.ibb.co/YZjqzxj/logo.png" alt="logo Arc Expertise"></img>
-			</div>
-			<div class="logocontainer">
-				<img class="logo" src="https://i.ibb.co/YZjqzxj/logo.png" alt="logo Arc Expertise"></img>
-			</div>
-			<div class="titlecontainer">
-				<h1>Une expertise au service de l’immobilier</h1>
-			</div>
-		</header>
-		
-		<main> 
-			<div class="introbackground">
-				<div class="intro">
-					<h2 class="titreintro">Le métier d’ARC EXPERTISE est d’assister tous les acteurs de l’immobilier pour des missions spécifiques telles que :</h2>
-					<div class="liste1">
-						<p>Audit du projet immobilier</br>
-						Conseil auprès de l’acquéreur de l’actif immobilier</br>
-						Préparation et Gestion d’une « data room »</br>
-						Détermination d’un cash flow et projections financières</br>
-						Procédure budgétaire en promotion</br>
-						Contrôle budgétaire de l’opération</br>
-						Préparation des dossiers et recherche de financements.</br>
-						</p>
-					</div>
-					<div class="liste2">
-						<p>Rédaction des baux commerciaux</br>
-						Négociation entre Bailleur et Preneur</br>
-						Arbitrage dans le domaine des contrats locatifs</br>
-						Expertise</br>
-						Renouvellements</br>
-						Valorisation d’un bien immobilier</br>
-						Asset Management d’un actif immobilier</br>
-						Contrôle et révision des missions confiées à des tiers.</br>
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="experience">
-				<div class="expcoin"></div>
-				<h2 class="exptitre">ARC EXPERTISE s’appuie sur l’expérience de son fondateur acquise depuis 1977 :</h2>
-				<div class="exptxt">
-					<p>Au sein de la Société des Centres Commerciaux (1977-1990) avec la création du premier service de gestion locative spécialisé en matière d’immobilier commercial.</br>
-						</br>
-						Puis, chez TREMA France, comme directeur administratif et financier et directeur de la gestion (1991-1997).</br>
-						</br>
-						Au groupe ETAM (1998-2002), en tant que Directeur Immobilier pour l’ensemble des actifs en France </br>(magasins, entrepôts, siège) et, en particulier, avec la responsabilité de la réalisation du siège administratif </br> de Clichy : (construction en VEFA de 15 000 M² de bureaux).</br>
-						</br>
-						Enfin, au groupe ERDEC, comme Secrétaire Général de 2002 à décembre 2010.</br>
-					</p>
-				</div>
-			</div>
-			<div class="experience2">
-				<div class="exp2coin"></div>
-				<h2>Cette expérience acquise dans différentes responsabilités :</h2>
-				<div class="exp2txt">
-					<p>Gestion administrative, promotion immobilière, gestion juridique et/ou financière pour <br class="sexp21"/> des investissements
-						immobiliers s’est trouvée reconnue par la qualité de membre associé<br class="sexp22"/> au sein de l’Institut
-						Français de l’Expertise Immobilière.
-					</p>
-					<img class="ifei" src="https://i.ibb.co/D8Hm2wL/ifei.jpg" alt="ifei" border="0"></img>
-				</div>
-			</div>
-			<div class="fin">
-				<h2 class="txtfin">L'optimisation d'Actifs Immobiliers est un objectif majeur pour les investisseurs, quel que soit leur statut ou leur taille.
-					</br></br>ARC EXPERTISE est en mesure d’assurer cette optimisation dans tous les secteurs qui touchent à l'immobilier.
-				</h2>
-			</div>
-		</main>
-		
-		<footer>
-			<div ="footercontainer">
-				<div id="footer">
-					<img class="portrait" src="https://i.ibb.co/yBr6J74/portrait.png" alt="Alain Rochereau"></img>
-					<div class="txtfootercont">
-						<h2 class="txtfooter"><span class="nom">Alain Rochereau</span></br><br class="sf"/>
-						5, rue des Bouchers – 28000 CHARTRES</br>
-						+ 00 33 (0) 6 22 21 06 44</br>
-						arc.expertise@orange.fr</br>
-						</h2>
-					</div>
-				</div>
-			</div>
-			<div class="copyrightcontainer">
-				<p class="copyright">© Arc Expertise</p>
-			</div>
-		</footer>
-		
-	</body>
-</html>
