@@ -16,8 +16,6 @@
  
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
 	<script type="text/javascript">
-	window.addEventListener('resize', function(){
-    if(window.innerWidth > 568){
 	
 	$(document).scroll(function () {
     var y = $(this).scrollTop();
@@ -62,15 +60,13 @@
 	$(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 2000) {
-        $('footer').fadeIn("3000");
+        $('footer').fadeIn("2000");
     } else {
-        $('footer').fadeOut("3000");
+        $('footer').fadeOut("2000");
     }
 
 	});
 	
-	}
-});
 	</script>
 
 	<body>
